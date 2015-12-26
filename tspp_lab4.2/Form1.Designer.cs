@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataSet1 = new System.Data.DataSet();
             this.DataTable1 = new System.Data.DataTable();
             this.DataColumn1 = new System.Data.DataColumn();
@@ -141,10 +141,10 @@
             // NumberDataGridViewTextBoxColumn
             // 
             this.NumberDataGridViewTextBoxColumn.DataPropertyName = "number";
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle33.Format = "N0";
-            dataGridViewCellStyle33.NullValue = null;
-            this.NumberDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle41.Format = "N0";
+            dataGridViewCellStyle41.NullValue = null;
+            this.NumberDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle41;
             this.NumberDataGridViewTextBoxColumn.HeaderText = "Таб. номер";
             this.NumberDataGridViewTextBoxColumn.Name = "NumberDataGridViewTextBoxColumn";
             this.NumberDataGridViewTextBoxColumn.ReadOnly = true;
@@ -160,10 +160,10 @@
             // TarifDataGridViewTextBoxColumn
             // 
             this.TarifDataGridViewTextBoxColumn.DataPropertyName = "Tarif";
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle34.Format = "N2";
-            dataGridViewCellStyle34.NullValue = null;
-            this.TarifDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle42.Format = "N2";
+            dataGridViewCellStyle42.NullValue = null;
+            this.TarifDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle42;
             this.TarifDataGridViewTextBoxColumn.HeaderText = "Тарифна ставка";
             this.TarifDataGridViewTextBoxColumn.Name = "TarifDataGridViewTextBoxColumn";
             this.TarifDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -171,10 +171,10 @@
             // NightTimeDataGridViewTextBoxColumn
             // 
             this.NightTimeDataGridViewTextBoxColumn.DataPropertyName = "nightTime";
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle35.Format = "N0";
-            dataGridViewCellStyle35.NullValue = null;
-            this.NightTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle43.Format = "N0";
+            dataGridViewCellStyle43.NullValue = null;
+            this.NightTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle43;
             this.NightTimeDataGridViewTextBoxColumn.HeaderText = "Отработано часов в ночное время";
             this.NightTimeDataGridViewTextBoxColumn.Name = "NightTimeDataGridViewTextBoxColumn";
             this.NightTimeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -182,10 +182,10 @@
             // DoplataDataGridViewTextBoxColumn
             // 
             this.DoplataDataGridViewTextBoxColumn.DataPropertyName = "Doplata";
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle36.Format = "N2";
-            dataGridViewCellStyle36.NullValue = null;
-            this.DoplataDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle44.Format = "N2";
+            dataGridViewCellStyle44.NullValue = null;
+            this.DoplataDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle44;
             this.DoplataDataGridViewTextBoxColumn.HeaderText = "Доплата";
             this.DoplataDataGridViewTextBoxColumn.Name = "DoplataDataGridViewTextBoxColumn";
             this.DoplataDataGridViewTextBoxColumn.ReadOnly = true;
@@ -266,7 +266,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ТСПП лаб4 Нелепа С.В.";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();

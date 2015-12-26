@@ -58,5 +58,10 @@ namespace tspp_lab4._2
                 DataSet1.ReadXml(openFileDialog1.FileName);
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
