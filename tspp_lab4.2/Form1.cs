@@ -32,5 +32,31 @@ namespace tspp_lab4._2
             
             label2.Text = sum.ToString();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                DataSet1.WriteXml(saveFileDialog1.FileName);
+
+        }
+
+        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (DataSet1.Tables[0].Rows.Count > 0) DataSet1.Clear();
+                DataSet1.ReadXml(openFileDialog1.FileName);
+            }
+        }
     }
 }
