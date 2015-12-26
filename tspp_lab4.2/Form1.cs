@@ -16,5 +16,21 @@ namespace tspp_lab4._2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double sum = 0;
+          
+                //-цикл по комірках рядка таблиці-
+                for (int i = 0; i < DataGridView1.Rows.Count; i++)
+                {
+                    //-перевірка заповнення комірки значенням-
+                    if (DataGridView1.Rows[i].Cells[4].Value != DBNull.Value)
+                       
+                        sum += Convert.ToDouble(DataGridView1.Rows[i].Cells[4].Value);
+                }
+            
+            label2.Text = sum.ToString();
+        }
     }
 }

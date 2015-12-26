@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataSet1 = new System.Data.DataSet();
             this.DataTable1 = new System.Data.DataTable();
             this.DataColumn1 = new System.Data.DataColumn();
@@ -46,6 +46,8 @@
             this.TarifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NightTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DoplataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
@@ -103,12 +105,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 191);
+            this.button1.Location = new System.Drawing.Point(12, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(149, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "Суммировать";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DataGridView1
             // 
@@ -130,10 +133,10 @@
             // NumberDataGridViewTextBoxColumn
             // 
             this.NumberDataGridViewTextBoxColumn.DataPropertyName = "number";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "N0";
-            dataGridViewCellStyle1.NullValue = null;
-            this.NumberDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N0";
+            dataGridViewCellStyle5.NullValue = null;
+            this.NumberDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.NumberDataGridViewTextBoxColumn.HeaderText = "Таб. номер";
             this.NumberDataGridViewTextBoxColumn.Name = "NumberDataGridViewTextBoxColumn";
             this.NumberDataGridViewTextBoxColumn.ReadOnly = true;
@@ -149,10 +152,10 @@
             // TarifDataGridViewTextBoxColumn
             // 
             this.TarifDataGridViewTextBoxColumn.DataPropertyName = "Tarif";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.TarifDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.TarifDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.TarifDataGridViewTextBoxColumn.HeaderText = "Тарифна ставка";
             this.TarifDataGridViewTextBoxColumn.Name = "TarifDataGridViewTextBoxColumn";
             this.TarifDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -160,10 +163,10 @@
             // NightTimeDataGridViewTextBoxColumn
             // 
             this.NightTimeDataGridViewTextBoxColumn.DataPropertyName = "nightTime";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            this.NightTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Format = "N0";
+            dataGridViewCellStyle7.NullValue = null;
+            this.NightTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
             this.NightTimeDataGridViewTextBoxColumn.HeaderText = "Отработано часов в ночное время";
             this.NightTimeDataGridViewTextBoxColumn.Name = "NightTimeDataGridViewTextBoxColumn";
             this.NightTimeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -171,20 +174,39 @@
             // DoplataDataGridViewTextBoxColumn
             // 
             this.DoplataDataGridViewTextBoxColumn.DataPropertyName = "Doplata";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle4.Format = "N2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.DoplataDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.DoplataDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             this.DoplataDataGridViewTextBoxColumn.HeaderText = "Доплата";
             this.DoplataDataGridViewTextBoxColumn.Name = "DoplataDataGridViewTextBoxColumn";
             this.DoplataDataGridViewTextBoxColumn.ReadOnly = true;
             this.DoplataDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 172);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Общая сумма доплат:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(134, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 261);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DataGridView1);
             this.Name = "Form1";
@@ -193,6 +215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -212,6 +235,8 @@
         internal System.Windows.Forms.DataGridViewTextBoxColumn TarifDataGridViewTextBoxColumn;
         internal System.Windows.Forms.DataGridViewTextBoxColumn NightTimeDataGridViewTextBoxColumn;
         internal System.Windows.Forms.DataGridViewTextBoxColumn DoplataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
